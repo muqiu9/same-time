@@ -1,4 +1,5 @@
-// pages/login/index.js
+// pages/main/main.js
+import http from '../../api/songs'
 Page({
 
   /**
@@ -12,7 +13,16 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.getData()
+  },
 
+  // 获取数据
+  getData () {
+    http.newSongs ({
+      success: res => {
+        // console.log(res)
+      }
+    })
   },
 
   /**
