@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/login/index",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#c0392b",
+    "navigationBarTitleText": "同城时光",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
