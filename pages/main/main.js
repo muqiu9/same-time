@@ -23,6 +23,8 @@ Page({
       if (res && res.data.code === 200) {
         console.log(res.data.result)
       }
+    }).catch (rej => {
+      console.log(rej)
     })
   },
 
