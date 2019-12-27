@@ -1,5 +1,5 @@
 // pages/main/main.js
-import http from '../../api/songs'
+import { newSongs } from '../../api/songs'
 Page({
 
   /**
@@ -18,9 +18,10 @@ Page({
 
   // 获取数据
   getData () {
-    http.newSongs ({
-      success: res => {
-        // console.log(res)
+    newSongs ().then (res => {
+      // console.log(res)
+      if (res && res.data.code === 200) {
+        console.log(res.data.result)
       }
     })
   },

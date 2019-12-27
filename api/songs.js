@@ -1,10 +1,10 @@
-import { http } from '../http'
+import request from '../request'
 
 // 推荐最新音乐
-function newSongs (data) {
-  http ('/personalized/newsong', data, 'get')
-}
-
-export default {
-  newSongs
+export function newSongs () {
+  return request ({
+    url: '/personalized/newsong',
+    methods: 'GET',
+    data: {}
+  })
 }
